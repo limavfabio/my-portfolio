@@ -1,0 +1,34 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<template>
+  <div class="bg-slate-9 bg-opacity-95 transition duration-300 md:h-8" :class="headerClasses"></div>
+  <header :class='headerClasses' class="sticky top-0 h-16 w-screen flex bg-slate-9 bg-opacity-95 backdrop-blur-sm transition-all duration-300">
+    <div class="mx-auto flex items-center justify-between pl-3 pr-6 container">
+      <a href="#" class="text-4xl font-bold">Fábio Lima</a>
+      <nav class="flex gap-3">
+        <a href="https://twitter.com/limavfabio" target="_blank" class="i-codicon-twitter text-3xl" />
+        <a href="https://github.com/limavfabio" target="_blank" class="i-codicon-github-inverted text-3xl" />
+      </nav>
+    </div>
+  </header>
+</template>
+
+<script setup lang="ts">
+const scrolled = ref(false);
+
+const handleScroll = () => {
+	scrolled.value = window.scrollY > 32;
+};
+
+onMounted(() => {
+	window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+	window.removeEventListener('scroll', handleScroll);
+});
+
+const headerClasses = computed(() => ({
+	'text-zinc-2': scrolled.value,
+	'bg-zinc-2': !scrolled.value,
+}));
+</script>
