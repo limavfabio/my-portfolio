@@ -29,6 +29,7 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         sans: 'Abel',
+        serif: 'Antic Slab',
       },
     }),
   ],

@@ -8,14 +8,17 @@ dependencies:
   '@unocss/reset':
     specifier: ^0.53.4
     version: 0.53.5
+  swiper:
+    specifier: ^10.0.4
+    version: 10.0.4
 
 devDependencies:
   '@antfu/eslint-config':
     specifier: ^0.39.7
     version: 0.39.7(eslint@8.44.0)(typescript@5.1.6)
-  '@iconify-json/codicon':
-    specifier: ^1.1.26
-    version: 1.1.26
+  '@iconify-json/ant-design':
+    specifier: ^1.1.5
+    version: 1.1.5
   '@nuxt/devtools':
     specifier: latest
     version: 0.6.7(nuxt@3.6.2)(vite@4.4.2)
@@ -982,8 +985,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/codicon@1.1.26:
-    resolution: {integrity: sha512-45eL9SIRByOryjY4VZ49SyaSxolHpYGL6z8vIzqrhECSQpcd8hvUJjyVj2gQ9IUy6QNVJirvgvWxXbp+XV5AMw==}
+  /@iconify-json/ant-design@1.1.5:
+    resolution: {integrity: sha512-lNEC95u9QdmS3GfMLnbAjLZCfQ9i4xURyn7P4UVHa6ejjLjs5FVyi/J+itrmnBpwb36YZo4CT0GDIn2AgvkNng==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -7883,6 +7886,11 @@ packages:
       csso: 5.0.5
       picocolors: 1.0.0
     dev: true
+
+  /swiper@10.0.4:
+    resolution: {integrity: sha512-DlNR3KiaVkPep6RraZ2tNr7lvyuzELuR+4NZr4wO42t0UworIO3DxDlz8b5Q3uUioh7cJad99EdRJLkPF+r8Ag==}
+    engines: {node: '>= 4.7.0'}
+    dev: false
 
   /synckit@0.8.5:
     resolution: {integrity: sha512-L1dapNV6vu2s/4Sputv8xGsCdAVlb5nRDMFU/E27D44l5U6cw1g0dGd45uLc+OXjNMmF4ntiMdCimzcjFKQI8Q==}

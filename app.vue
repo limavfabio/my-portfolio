@@ -11,7 +11,7 @@ import '@unocss/reset/tailwind.css';
 useHead({
 	title: 'Fábio Lima',
 	bodyAttrs: {
-		class: 'bg-zinc-200',
+		class: 'bg-zinc-2',
 	},
 });
 
