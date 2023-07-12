@@ -9,13 +9,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.7",
     "@nuxt/devtools": "latest",
     "@nuxt/image": "rc",
     "@types/node": "^18.16.18",
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.60.1",
-    "@unocss/eslint-config": "^0.53.4",
     "@unocss/nuxt": "^0.53.4",
     "@unocss/preset-icons": "^0.53.4",
     "eslint": "^8.43.0",
