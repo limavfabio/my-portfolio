@@ -1,18 +1,17 @@
-<template>
-	<div class="text-2xl font-sans text-slate-8">
-		<Header />
-		<NuxtPage />
-	</div>
-</template>
-
 <script setup lang="ts">
-import '@unocss/reset/tailwind.css';
+import '@unocss/reset/tailwind.css'
 
 useHead({
-	title: 'Fábio Lima',
-	bodyAttrs: {
-		class: 'bg-zinc-2',
-	},
-});
-
+  title: 'Fábio Lima',
+  bodyAttrs: {
+    class: 'bg-zinc-2',
+  },
+})
 </script>
+
+<template>
+  <div class="text-2xl font-sans text-slate-8">
+    <Header />
+    <NuxtPage />
+  </div>
+</template>
