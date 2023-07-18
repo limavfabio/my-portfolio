@@ -3,26 +3,45 @@
 import { register } from 'swiper/element/bundle'
 
 register()
+
+const isDesktop = computed(() => {
+  if (process.client)
+    return window.innerWidth > 1024
+})
+
+// Just define the works here and they will be rendered in the slider
+const recentWorks = [
+  {
+    title: 'Indie Gaming',
+    image: '/indie-gaming-screenshot.png',
+    link: 'https://github.com/limavfabio/summit-template',
+  },
+  {
+    title: 'Calculator App',
+    image: '/math-magicians-screenshot.png',
+    link: 'https://github.com/limavfabio/math-magicians',
+  },
+]
 </script>
 
 <template>
   <div>
     <TextSection
-      title="My recent works" body="Hello I’m a software developer!
-      I have experience with different technologies"
+      title="My recent works" body="I have worked on a wide range of projects. Take a look at some of them."
     />
 
     <!-- Main swiper element -->
-    <swiper-container class="h-120" navigation="true" pagination="true">
-      <swiper-slide class="flex justify-center bg-red">
-        <nuxt-img src="/indie-gaming-screenshot.png" class="cursor-pointer" sizes="xl:900 lg:560 md:480" />
-      </swiper-slide>
-      <swiper-slide class="bg-green">
-        Slide 2
-      </swiper-slide>
-      <swiper-slide class="bg-blue">
-        Slide 3
-      </swiper-slide>
-    </swiper-container>
+    <!-- Is wrapped in ClientOnly to avoid problems with calling the window object on the server
+    This is because of the binded navigation attribute, isDesktop calls the window object
+    which is only available on the client -->
+    <ClientOnly>
+      <swiper-container class="xl:h-120" :navigation="isDesktop" pagination="true">
+        <swiper-slide v-for="item in recentWorks" :key="item.title" class="flex justify-center">
+          <a :href="item.link" target="_blank" class="xl:px-20">
+            <nuxt-img :src="item.image" class="cursor-pointer" :alt="item.image" />
+          </a>
+        </swiper-slide>
+      </swiper-container>
+    </ClientOnly>
   </div>
 </template>

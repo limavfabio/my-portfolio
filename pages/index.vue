@@ -10,7 +10,8 @@
       If you like what you see and have a project you need coded, don’t hestiate to contact me."
     />
 
-    <WorksSection />
     <SkillsSection />
+
+    <WorksSection />
   </div>
 </template>

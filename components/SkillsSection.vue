@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="mt-20 h-screen">
-    <TextSection title="Skills" body="React, Vue, Ruby on Rails, TypeScript, Next.js" />
+  <div class="mt-20">
+    <TextSection title="Skills" body="I'm a Full-stack developer focused on web development with Ruby on Rails and React with TypeScript." />
   </div>
 </template>
