@@ -15,16 +15,16 @@ onUnmounted(() => {
 })
 
 const headerClasses = computed(() => ({
-  'text-zinc-2': scrolled.value,
+  'text-zinc-2 bg-zinc-9': scrolled.value,
   'bg-zinc-2': !scrolled.value,
 }))
 </script>
 
 <template>
-  <div class="bg-slate-9 bg-opacity-95 transition duration-300 md:h-8" :class="headerClasses" />
+  <div class="bg-opacity-95 transition duration-300 md:h-8" :class="headerClasses" />
   <header
     :class="headerClasses"
-    class="sticky top-0 z-2 h-16 flex bg-slate-9 bg-opacity-95 backdrop-blur-sm transition-all duration-300"
+    class="sticky top-0 z-2 h-16 flex bg-opacity-95 backdrop-blur-sm transition-all duration-300"
   >
     <div class="flex items-center justify-between pl-3 pr-6 container">
       <a href="#" class="text-4xl font-bold">Fábio Lima</a>

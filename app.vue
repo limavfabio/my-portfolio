@@ -10,7 +10,7 @@ useHead({
 </script>
 
 <template>
-  <div class="text-2xl font-sans text-slate-8">
+  <div class="text-2xl font-sans text-zinc-8">
     <Header />
     <NuxtPage />
   </div>
