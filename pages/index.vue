@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="mx-auto px-4 container">
+  <div class="container">
     <HeroSection />
 
     <!-- About Section -->
@@ -14,9 +14,11 @@
     <TextSection
       title="Skills"
       body="I'm a Full-stack developer focused on web development with
-     Ruby on Rails and React with TypeScript."
+      Ruby on Rails and React with TypeScript."
     />
 
     <WorksSection />
+
+    <ContactSection />
   </div>
 </template>

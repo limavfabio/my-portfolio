@@ -26,7 +26,7 @@ const headerClasses = computed(() => ({
     :class="headerClasses"
     class="sticky top-0 z-2 h-16 flex bg-slate-9 bg-opacity-95 backdrop-blur-sm transition-all duration-300"
   >
-    <div class="mx-auto flex items-center justify-between pl-3 pr-6 container">
+    <div class="flex items-center justify-between pl-3 pr-6 container">
       <a href="#" class="text-4xl font-bold">Fábio Lima</a>
       <nav class="flex gap-6">
         <a href="https://linkedin.com/in/limavfabio" target="_blank" class="i-ant-design-linkedin-filled text-3xl" />
