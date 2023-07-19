@@ -22,9 +22,7 @@
       </TextSection>
 
       <WorksSection />
-
-      <ContactSectionForm />
     </div>
-    <Footer />
+    <ContactSectionForm />
   </div>
 </template>

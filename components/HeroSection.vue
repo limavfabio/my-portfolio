@@ -4,7 +4,7 @@
 
 <template>
   <div class="">
-    <div class="mt-10 flex flex-col items-center gap-16 md:flex-row">
+    <div class="mb-16 mt-10 flex flex-col items-center gap-16 md:flex-row">
       <nuxt-img src="/my-photo-edited.webp" class="sm: lg:w-lg md:w-sm xl:w-xl" alt="My Photo Edited" />
 
       <div>

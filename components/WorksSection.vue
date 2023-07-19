@@ -25,7 +25,7 @@ const recentWorks = [
 </script>
 
 <template>
-  <div>
+  <div class="mb-20">
     <TextSection
       title="My recent works"
     >
@@ -39,7 +39,7 @@ const recentWorks = [
     <ClientOnly>
       <swiper-container class="xl:h-120" :navigation="isDesktop" pagination="true">
         <swiper-slide v-for="item in recentWorks" :key="item.title" class="flex justify-center">
-          <a :href="item.link" target="_blank" class="xl:mx-20">
+          <a :href="item.link" target="_blank" class="lg:mx-20">
             <nuxt-img :src="item.image" class="cursor-pointer" :alt="item.image" />
           </a>
         </swiper-slide>
