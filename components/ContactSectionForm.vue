@@ -12,7 +12,7 @@ or in this case, it's being handled by FormSpree -->
         title="Contact"
       >
         Send a message on my
-        <a href="https://www.linkedin.com/in/limavfabio/" target="_blank">LinkedIn</a>
+        <a class="text-zinc-4 decoration-dotted hover:text-zinc-2 hover:underline" href="https://www.linkedin.com/in/limavfabio/" target="_blank">LinkedIn</a>
         or an email with the form below.
       </TextSection>
       <div class="flex justify-center">
@@ -34,7 +34,7 @@ or in this case, it's being handled by FormSpree -->
             label="Name"
             validation="required|alpha_spaces|length:3"
             :classes="{
-              input: 'px-3 py-2 text-xl w-full border border-zinc-3',
+              input: 'px-3 py-2 text-xl w-full border border-zinc-3 text-zinc-8',
               outer: 'mb-3',
               message: 'text-lg text-red-6',
             }"
@@ -46,7 +46,7 @@ or in this case, it's being handled by FormSpree -->
             label="Email"
             validation="required|email"
             :classes="{
-              input: 'px-3 py-2 text-xl w-full border border-zinc-3',
+              input: 'px-3 py-2 text-xl w-full border border-zinc-3 text-zinc-8',
               outer: 'mb-3',
               message: 'text-lg text-red-6',
             }"
@@ -58,7 +58,7 @@ or in this case, it's being handled by FormSpree -->
             label="Message"
             validation="required|length:30"
             :classes="{
-              input: 'px-3 py-2 text-xl w-full border border-zinc-3',
+              input: 'px-3 py-2 text-xl w-full border border-zinc-3 text-zinc-8',
               outer: 'mb-3',
               message: 'text-lg text-red-6',
             }"
@@ -77,16 +77,5 @@ or in this case, it's being handled by FormSpree -->
 </template>
 
 <style scoped>
-a {
-  color: rgb(82, 82, 91);
-}
-a:hover {
-  text-decoration: underline dotted;
-  color: rgb(39, 39, 42);
-}
 
-input {
-  border-radius: 0;
-  border: 1px solid rgb(39, 39, 42);
-}
 </style>
