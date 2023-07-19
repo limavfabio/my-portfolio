@@ -15,3 +15,7 @@ useHead({
     <NuxtPage />
   </div>
 </template>
+
+<style>
+
+</style>

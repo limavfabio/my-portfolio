@@ -1,7 +1,6 @@
 <script setup lang="ts">
 defineProps({
   title: { type: String, required: true },
-  body: { type: String, required: true },
 })
 </script>
 
@@ -11,7 +10,7 @@ defineProps({
       {{ title }}
     </h2>
     <p class="text-3xl">
-      {{ body }}
+      <slot />
     </p>
   </div>
 </template>

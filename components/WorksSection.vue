@@ -27,8 +27,10 @@ const recentWorks = [
 <template>
   <div>
     <TextSection
-      title="My recent works" body="I have worked on a wide range of projects. Take a look at some of them."
-    />
+      title="My recent works"
+    >
+      I have worked on a wide range of projects. Take a look at some of them
+    </TextSection>
 
     <!-- Main swiper element -->
     <!-- Is wrapped in ClientOnly to avoid problems with calling the window object on the server
